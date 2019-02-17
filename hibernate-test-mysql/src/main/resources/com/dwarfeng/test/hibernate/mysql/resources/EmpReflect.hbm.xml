@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<!-- 属性table 表示在数据库中的表名 -->
+	<class name="com.dwarfeng.test.hibernate.mysql.EmpReflect"
+		table="emp">
+		<id name="empno" column="empno" type="int">
+			<!-- 值native表示会根据数据库来创建不同的主键生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="ename" column="ename" type="string"></property>
+		<property name="job" column="job" type="string"></property>
+		<property name="mgr" column="mgr" type="int"></property>
+		<property name="hiredate" column="hiredate" type="date"></property>
+		<property name="sal" column="sal" type="double"></property>
+		<property name="comm" column="comm" type="double"></property>
+		<property name="deptno" column="deptno" type="int"></property>
+	</class>
+</hibernate-mapping>
