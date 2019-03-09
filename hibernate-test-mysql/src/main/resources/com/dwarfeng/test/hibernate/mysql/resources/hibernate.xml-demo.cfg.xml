@@ -20,7 +20,7 @@
 		<property name="hbm2ddl.auto">update</property>
 
 		<!-- 导入实体映射配置，程序每次启动都会自动检索 -->
-		<mapping resource="/com/dwarfeng/test/hibernate/mysql/resources/EmpReflect.hbm.xml" />
+		<mapping resource="/com/dwarfeng/test/hibernate/mysql/resources/EmpXml.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>

@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">3</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/bjpowernode?serverTimezone=UTC</property>
+
+		<!-- 要根据自己使用的数据库来配置相对应的属性，也成方言，针对不同数据库 关于怎么配置可以查看HibernateAPI -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Hibernate 創建的SQL語句会显示在控制台 -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- 选择方案，常用值：validate | update | create | create-drop -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- 导入实体映射配置，程序每次启动都会自动检索 -->
+		<mapping class="com.dwarfeng.test.hibernate.mysql.EmpJpa" />
+
+	</session-factory>
+</hibernate-configuration>

@@ -6,7 +6,7 @@
 <hibernate-mapping>
 
 	<!-- 属性table 表示在数据库中的表名 -->
-	<class name="com.dwarfeng.test.hibernate.mysql.EmpReflect"
+	<class name="com.dwarfeng.test.hibernate.mysql.EmpXml"
 		table="emp">
 		<id name="empno" column="empno" type="int">
 			<!-- 值native表示会根据数据库来创建不同的主键生成策略 -->

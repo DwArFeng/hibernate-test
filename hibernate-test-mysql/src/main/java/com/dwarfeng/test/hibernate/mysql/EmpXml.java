@@ -2,7 +2,7 @@ package com.dwarfeng.test.hibernate.mysql;
 
 import java.util.Date;
 
-public final class EmpReflect {
+public final class EmpXml {
 
 	private Integer empno;
 	private String ename;
@@ -13,7 +13,7 @@ public final class EmpReflect {
 	private Double comm;
 	private Integer deptno;
 
-	public EmpReflect() {
+	public EmpXml() {
 	}
 
 	/**
@@ -136,12 +136,9 @@ public final class EmpReflect {
 		this.deptno = deptno;
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	@Override
 	public String toString() {
-		return "EmpReflect [empno=" + empno + ", ename=" + ename + ", job=" + job + ", mgr=" + mgr + ", hiredate="
+		return "EmpXml [empno=" + empno + ", ename=" + ename + ", job=" + job + ", mgr=" + mgr + ", hiredate="
 				+ hiredate + ", sal=" + sal + ", comm=" + comm + ", deptno=" + deptno + "]";
 	}
 
